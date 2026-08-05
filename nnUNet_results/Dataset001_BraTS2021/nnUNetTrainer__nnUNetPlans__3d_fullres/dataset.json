@@ -1,0 +1,16 @@
+{
+    "channel_names": {
+        "0": "FLAIR",
+        "1": "T1",
+        "2": "T1ce",
+        "3": "T2"
+    },
+    "labels": {
+        "background": 0,
+        "necrotic_non_enhancing_tumor": 1,
+        "edema": 2,
+        "enhancing_tumor": 3
+    },
+    "numTraining": 360,
+    "file_ending": ".nii.gz"
+}
