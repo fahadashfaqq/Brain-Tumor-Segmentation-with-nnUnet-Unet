@@ -29,7 +29,11 @@ app = Flask(__name__)    #creates your Flask web application object.  Flask(__na
 # IMPORTANT:
 # This should be the parent nnUNet_results folder.
 # It should contain Dataset001_BraTS2021 inside it.
-NNUNET_RESULTS = r"D:/Uni/Seven/Project/Final_Project_V1/NNUnet_Brain_Prediction/nnUNet_results"
+#NNUNET_RESULTS = r"D:/Uni/Seven/Project/Final_Project_V1/NNUnet_Brain_Prediction/nnUNet_results"
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+NNUNET_RESULTS = os.path.join(BASE_DIR, "nnUNet_results")
 
 os.environ["nnUNet_results"] = NNUNET_RESULTS
 os.environ["nnUNet_raw"] = os.path.abspath("nnUNet_raw_app")
